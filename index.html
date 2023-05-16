@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body class="bg-dark">
+
+
+
+
+    <style>
+
+
+        table{
+
+
+
+            background-color: rgb(0, 0, 0);
+        }
+        </style> 
+
+
+        
+       
+     
+    <div class="container text-center w-50">
+      <h1 class="text-white">Calculator</h1>
+      <table class="table  shadow-light " >
+        <tr>
+          <td colspan="4">
+            <input type="text" class="form-control  bg-success  text-white  border-dark " id="result" >
+          </td>
+        </tr>
+
+
+      </tr>
+      <tr>
+        <th> <button onclick="get_num('Math.pow')" class="btn btn-dark w-50 text-center"> POW </button> </th>
+        <th> <button onclick="get_num('Math.log')" class="btn btn-dark w-50 text-center"> log </button> </th>
+        <th> <button onclick="get_num('Math.acos')"class="btn btn-dark w-50 text-center"> cos−1</button> </th>
+        <th> <button onclick="get_num('Math.asin')"class="btn btn-dark w-50 text-center"> sin-1 </button> </th>
+        
+    </tr>
+    
+        <tr>
+          <th> <button onclick="get_num('Math.tan')" class="btn btn-dark w-50 text-center"> tan </button> </th>
+          <th> <button onclick="get_num('Math.sin')"class="btn btn-dark w-50 text-center"> sin  </button> </th>
+          <th> <button onclick="get_num('Math.cos')"class="btn btn-dark w-50 text-center"> cos</button> </th>
+          <th> <button onclick="get_num('Math.sqrt')"class="btn btn-dark w-50 text-center"> √ </button> </th>
+      </tr>
+          <tr>
+            <th> <button onclick="get_num('&#40')" class="btn btn-dark w-50 text-center"> &#40 </button> </th>
+            <th> <button onclick="get_num('&#41')"class="btn btn-dark w-50 text-center"> &#41  </button> </th>
+            <th> <button onclick="get_num('Math.E')"class="btn btn-dark w-50 text-center"> E </button> </th>
+            <th> <button onclick="get_num('Math.PI')"class="btn btn-dark w-50 text-center"> π </button> </th>
+        </tr>
+          <td><button onclick="get_num('7')" type="button" class="btn btn-primary w-50" >7</button></td>
+          <td><button onclick="get_num('8')" type="button" class="btn btn-primary w-50 ">8</button></td>
+          <td><button onclick="get_num('9')" type="button" class="btn btn-primary w-50" >9</button></td>
+          <td><button onclick="get_num('/')" type="button" class="btn btn-danger w-50 " >/</button></td>
+        </tr>
+        <tr>
+          <td><button  onclick="get_num('4')" type="button" class="btn btn-primary w-50">4</button></td>
+          <td><button onclick="get_num('5')" type="button" class="btn btn-primary w-50 " >5</button></td>
+          <td><button onclick="get_num('6')" type="button" class="btn btn-primary  w-50">6</button></td>
+          <td><button onclick="get_num('*')" type="button" class="btn btn-danger w-50" >*</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="get_num('1')" type="button" class="btn btn-primary w-50 ">1</button></td>
+          <td><button onclick="get_num('2')" type="button" class="btn btn-primary w-50" >2</button></td>
+          <td><button onclick="get_num('3')" type="button" class="btn btn-primary w-50" >3</button></td>
+          <td><button onclick="get_num('-')" type="button" class="btn btn-danger w-50" >-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="get_num('0')" type="button" class="btn btn-primary w-50" >0</button></td>
+          <td><button  onclick="get_num('.')" type="button" class="btn btn-primary w-50">.</button></td>
+          <td><button  onclick="get_num('00')" type="button" class="btn btn-primary w-50">00</button></td>
+          <td><button onclick="get_num('+')" type="button" class="btn btn-danger w-50" >+</button></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button  onclick="getresult()" type="button" class="btn btn-light w-100" value="=">=</button>
+            <td><button onclick="clear_result()" type="button" class="btn btn-danger w-50" >clear</button></td>
+            <td><button onclick="clear_num()"   type="button" class="btn btn-success  w-50"><i class="fa-solid fa-delete-left"></i></button></td>
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+
+
+
+<script src="app.js"></script>
+  </body>
+</html>
+  
